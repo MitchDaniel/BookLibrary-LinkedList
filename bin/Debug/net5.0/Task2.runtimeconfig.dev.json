@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Brill\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Brill\\.nuget\\packages"
+    ]
+  }
+}

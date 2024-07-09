@@ -1,0 +1,16 @@
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\bin\Debug\net5.0\Task2.exe
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\bin\Debug\net5.0\Task2.deps.json
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\bin\Debug\net5.0\Task2.runtimeconfig.json
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\bin\Debug\net5.0\Task2.runtimeconfig.dev.json
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\bin\Debug\net5.0\Task2.dll
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\bin\Debug\net5.0\ref\Task2.dll
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\bin\Debug\net5.0\Task2.pdb
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\obj\Debug\net5.0\Task2.csprojAssemblyReference.cache
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\obj\Debug\net5.0\Task2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\obj\Debug\net5.0\Task2.AssemblyInfoInputs.cache
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\obj\Debug\net5.0\Task2.AssemblyInfo.cs
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\obj\Debug\net5.0\Task2.csproj.CoreCompileInputs.cache
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\obj\Debug\net5.0\Task2.dll
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\obj\Debug\net5.0\ref\Task2.dll
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\obj\Debug\net5.0\Task2.pdb
+C:\Users\Brill\source\repos\CSharp_Practice_modul_10_part_03\Task2\obj\Debug\net5.0\Task2.genruntimeconfig.cache
