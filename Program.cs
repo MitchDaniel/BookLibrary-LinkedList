@@ -12,20 +12,25 @@ namespace Task2
                 new Book("To Kill a Mockingbird", "Harper Lee", "Fiction", 1960),
                 new Book("1984", "George Orwell", "Dystopian", 1949),
                 new Book("Pride and Prejudice", "Jane Austen", "Romance", 1813),
-                new Book("The Great Gatsby", "F. Scott Fitzgerald", "Fiction", 1925),
-                new Book("Moby-Dick", "Herman Melville", "Adventure", 1851));
+                new Book("Moby-Dick", "Herman Melville", "Adventure", 1851),
+                new Book("The Catcher in the Rye", "J.D. Salinger", "Fiction", 1951),
+                new Book("Brave New World", "Aldous Huxley", "Dystopian", 1932),
+                new Book("The Hobbit", "J.R.R. Tolkien", "Fantasy", 1937),
+                new Book("War and Peace", "Leo Tolstoy", "Historical", 1869),
+                new Book("Crime and Punishment", "Fyodor Dostoevsky", "Psychological Fiction", 1866)
+            );
             foreach (var book in booksForSummer)
             {
                 Console.WriteLine(book);
             }
-            booksForSummer.Delete(x => x.Author == "George Orwell");
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            foreach (var book in booksForSummer)
-            {
-                Console.WriteLine(book);
-            }
+            //booksForSummer.Delete(x => x.Author == "George Orwell");
+            //Console.WriteLine();
+            //Console.WriteLine();
+            //Console.WriteLine();
+            //foreach (var book in booksForSummer)
+            //{
+            //    Console.WriteLine(book);
+            //}
             //Console.WriteLine();
             //Console.WriteLine();
             //Console.WriteLine();
@@ -41,6 +46,25 @@ namespace Task2
             //{
             //    Console.WriteLine(book);
             //}
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            booksForSummer.AddToPosition(1, new Book("The Great Gatsby", "F. Scott Fitzgerald", "Fiction", 1925));
+
+            foreach (var book in booksForSummer)
+            {
+                Console.WriteLine(book);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            booksForSummer.DeleteFromPosition(1);
+
+            foreach (var book in booksForSummer)
+            {
+                Console.WriteLine(book);
+            }
         }
     }
 }

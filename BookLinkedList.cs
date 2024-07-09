@@ -13,11 +13,7 @@ namespace Task2
 
         public LinkedListNode<Book> FirstNode { private set; get; }
 
-        public BookLinkedList() { }
-        public BookLinkedList(params Book[] books)
-        {
-            Add(books);
-        }
+        public BookLinkedList(params Book[] books) => Add(books);
 
         public Book this[int index]
         {
@@ -112,14 +108,44 @@ namespace Task2
             }
         }
 
-        public IEnumerator<Book> GetEnumerator()
+        public void AddFirst(Book book) => _books.AddFirst(book);
+
+        public void AddLast(Book book) => _books.AddLast(book);
+
+        public void DeleteLast() => _books.RemoveLast();
+
+        public void DeleteFirst() => _books.RemoveFirst();
+
+        public IEnumerator<Book> GetEnumerator() => _books.GetEnumerator();
+        
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+
+        public void AddToPosition(int position, Book book)
         {
-            return _books.GetEnumerator();
+            if(position > _books.Count || position < 0)
+            {
+                throw new IndexOutOfRangeException();
+            }
+            var current = _books.First;
+            for (int i = 0; i < position - 1; i++)
+            {
+                current = current.Next;
+            }
+            _books.AddAfter(current, book);
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
+        public void DeleteFromPosition(int position)
         {
-            return GetEnumerator();
+            if (position > _books.Count || position < 0)
+            {
+                throw new IndexOutOfRangeException();
+            }
+            var current = _books.First;
+            for (int i = 0; i < position - 1; i++)
+            {
+                current = current.Next;
+            }
+            _books.Remove(current);
         }
     }
 }
@@ -127,11 +153,11 @@ namespace Task2
 //Приложение должно предоставлять такую функциональность:
 //* Добавление книг + 
 //* Удаление книг + 
-//* Изменение информации о книгах 
+//* Изменение информации о книгах +
 //* Поиск книг по параметрам +
-//* Вставка книги в начало списка
-//* Вставка книги в конец списка
+//* Вставка книги в начало списка +
+//* Вставка книги в конец списка +
 //* Вставка книги в определенную позицию
-//* Удаление книги из начала списка
-//* Удаление книги из конца списка
-//* Удалениеs книги из определенной позиции
+//* Удаление книги из начала списка +
+//* Удаление книги из конца списка +
+//* Удалениеs книги из определенной позиции 

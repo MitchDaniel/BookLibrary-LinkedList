@@ -24,10 +24,7 @@ namespace Task2
 
         public int Year { set; get; }
 
-        public override string ToString()
-        {
-            return $"{Name} by {Author}, {Year}, {Genre}";
-        }
+        public override string ToString() => $"{Name} by {Author}, {Year}, {Genre}";
     }
 }
 
